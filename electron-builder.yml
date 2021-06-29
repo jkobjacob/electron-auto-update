@@ -1,0 +1,33 @@
+appId: com.example.app
+copyright: Example co
+productName: electron-update
+
+asar: true
+
+directories:
+  buildResources: dist-assets/
+  output: dist/
+
+files:
+  - package.json
+  - app.js
+  - ui/
+  - node_modules/
+
+publish:
+  provider: generic
+  url: https://github.com/jkobjacob/electron-auto-update-poc
+
+dmg:
+  contents:
+    - type: link
+      path: /Applications
+      x: 410
+      y: 150
+    - type: file
+      x: 130
+      y: 150
+
+mac:
+  target: dmg
+  category: public.app-category.tools

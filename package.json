@@ -1,0 +1,20 @@
+{
+  "name": "electron-auto-update-poc",
+  "version": "1.0.0",
+  "description": "A POC to figure out how to auto update electron apps installed.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js",
+    "electron": "electron app.js"
+  },
+  "author": "sherin jacob",
+  "license": "MIT",
+  "dependencies": {
+    "electron-updater": "^4.3.9"
+  },
+  "devDependencies": {
+    "electron": "^8.2.2",
+    "electron-builder": "^22.4.1"
+  }
+}
