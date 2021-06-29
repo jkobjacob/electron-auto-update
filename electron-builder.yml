@@ -1,4 +1,4 @@
-appId: com.example.app
+appId: com.github.jkobjacob.electronautoupdate
 copyright: Example co
 productName: electron-update
 
@@ -15,8 +15,11 @@ files:
   - node_modules/
 
 publish:
-  provider: generic
+  provider: github
   url: https://github.com/jkobjacob/electron-auto-update-poc
+  token: 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@
+  private: true
+  publishAutoUpdate: true
 
 dmg:
   contents:
